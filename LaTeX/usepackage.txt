@@ -1,0 +1,8 @@
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amssymb, amsmath}
+\usepackage{tikz,pgfplots}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+\usepackage{hyperref}

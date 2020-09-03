@@ -1,12 +1,14 @@
+==============================================================================
 ### Mathematical Notation
--------------------------
+==============================================================================
 
 To put the page number out, just type:
 \pagestyle{empty}
 at the beginning of the document, after documentclass.
 
+==============================================================================
 ## Superscript
-------------------
+==============================================================================
 
 Use '^' (power) symbol to get superscript
 
@@ -14,16 +16,18 @@ Use curly brackets to enclose the power/exponent component in your mathematical
 formula. Otherwise, latex will only count immediate number after the power
 symbol.
 
+==============================================================================
 ## Subscript
-------------------
+==============================================================================
 
 Use '_' (underscore) symbol to get subscript.
 
 '\ldots' gives us three dots.
 '\cdots' gives us three dots, aligned at the center.
 
+==============================================================================
 ## Greek letters
-------------------
+==============================================================================
 
 Just put slash in the beginning and type the Greek letter name.
 
@@ -32,8 +36,9 @@ version of the Greek alphabet. Use small letter to get the small letter version.
 
 We need to put a space in between Greek letter command, and later commands.
 
+==============================================================================
 ## Trig Functions
-------------------
+==============================================================================
 
 $$ y = sinx $$
 
@@ -42,8 +47,9 @@ To do that, put a slash in front of sin.
 
 $$ \sin x$$
 
+==============================================================================
 ## roots
-------------------
+==============================================================================
 
 We have two options here. One is for just square root. The other one is for
 root of more than two.
@@ -56,8 +62,9 @@ $$ \sqrt[3]{4} $$
 
 This will give us the cube root of 4.
 
+==============================================================================
 ## fractions
-------------------
+==============================================================================
 
 $$ \frac{2}	{3} $$
 This will print out a large fraction.
@@ -78,10 +85,9 @@ the fraction within a line.
 About $\displaystyle \frac{2}{3}$ of the glass is full.
 This will print out a large fraction.
 
-
-
+==============================================================================
 ## spacing
-------------------
+==============================================================================
 
 Use double slash, then square brackets. Inside square brackets, write how many
 points of space you need in between lines. (see previous example)

@@ -1,11 +1,15 @@
+==============================================================================
 ### Beginning instruction
--------------------------
+==============================================================================
 
+==============================================================================
 ## To make a pdf
-------------------
+==============================================================================
 
+==============================================================================
 # Before you start compiling
--------------------------------
+==============================================================================
+
 The text are gonna be colored black, where as the command will be colored
 blue or any other color.
 
@@ -19,12 +23,20 @@ Under the 'quick build' tab, select the 'pdflatex + view pdf' option.
 
 Under the 'editor' tab, select whatever option you think you might need.
 
+Under the 'editor' tab, set 'background' color as : #000000 
+
+Under the 'editor' tab, set 'comment' color as : #ff9900
+
+Under the 'editor' tab, set 'LaTeX command' color as : #00ffff
+
 After you are done, click 'ok'.
 
 Now you are ready to begin.
 
+
+==============================================================================
 # Compiling your first document
--------------------------------
+==============================================================================
 
 Select the 'Quick Build' option next to the 'view pdf' option in your screen.
 This will compile the code and make the pdf simultaneously.
