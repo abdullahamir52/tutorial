@@ -1,0 +1,6 @@
+kdenlive (video editing software)
+-----------------------------------
+sudo snap install kdenlive
+
+
+

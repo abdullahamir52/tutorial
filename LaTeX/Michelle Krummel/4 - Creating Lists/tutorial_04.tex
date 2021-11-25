@@ -1,0 +1,147 @@
+\documentclass[11pt]{article}
+\usepackage{enumerate}
+
+
+\begin{document}
+
+
+\section{Numbered list}
+
+\begin{enumerate}
+
+\item pencil
+\item calculator
+\item ruler 
+\item notebook
+
+\end{enumerate}
+
+
+
+
+\section{Bullet-ed list}
+
+\begin{itemize}
+
+\item pencil
+\item calculator
+\item ruler 
+\item notebook
+
+\end{itemize}
+
+
+
+
+\section{Nested list, enumerated}
+
+\begin{enumerate}
+
+\item pencil
+\item calculator
+\item ruler 
+\item notebook
+		\begin{enumerate}
+		\item notes
+		\item homework
+		\item assessment 
+				\begin{enumerate}
+				\item test
+				\item quizzes
+				\item journal entries
+				\end{enumerate}
+		\end{enumerate}
+\item highlighters
+
+\end{enumerate}
+
+
+\vspace{1cm}
+
+
+\section{Other options in nested list}
+
+Change how you want the numbered list to look like. 
+
+\subsection{capital letter}
+
+\begin{enumerate} [A.]
+
+\item pencil
+\item calculator
+\item ruler 
+\item notebook
+
+\end{enumerate}
+
+
+\subsection{small roman letter}
+
+\begin{enumerate} [i.]
+
+\item pencil
+\item calculator
+\item ruler 
+\item notebook
+
+\end{enumerate}
+
+
+\subsection{different starting point}
+
+\begin{enumerate} \setcounter{enumi}{5}
+
+\item pencil
+\item calculator
+\item ruler 
+\item notebook
+
+\end{enumerate}
+
+
+\pagebreak
+
+
+\section{Nested list, bullet-ed}
+
+\begin{itemize}
+
+\item pencil
+\item calculator
+\item ruler 
+\item notebook
+		\begin{itemize}
+		\item notes
+		\item homework
+		\item assessment 
+				\begin{itemize}
+				\item test
+				\item quizzes
+				\item journal entries
+				\end{itemize}
+		\end{itemize}
+\item highlighters
+
+\end{itemize}
+
+
+\section{Other options in nested list, part 2}
+
+Change how you want the numbered list to look like. 
+
+\subsection{If you want customized numbers or no number at all}
+
+\begin{enumerate} [A.]
+
+\item [] pencil
+\item [one] calculator
+\item [three] ruler 
+\item [4] notebook
+
+\end{enumerate}
+
+
+The list numbers are right-aligned. 
+
+
+\end{document}

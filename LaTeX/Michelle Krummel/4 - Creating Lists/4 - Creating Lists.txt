@@ -1,0 +1,29 @@
+==============================================================================
+### Creating lists
+==============================================================================
+
+type \usepackage{enumerate} to make lists.
+
+use \begin{enumerate} to have a numbered list.
+
+use \begin{itemize} to have a bullet list. 
+
+use \item your_item_here to add a new item in the list. 
+
+You can indent the list to create nested list. 
+
+==============================================================================
+## Other options in nested list
+==============================================================================
+
+After \begin{enumerate} type your style of bullet/number you want in square 
+bracket. e.g.
+\begin{enumerate} [A.]
+will generate numbered list that uses capital letter.
+
+Type \begin{enumerate} \setcounter{enumi}{5} to start the counter from 6 in 
+your list. 
+
+You can also have nested bullet list. 
+
+Type \item [your_number_here] your_item_here to generate customized list.

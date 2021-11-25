@@ -1,0 +1,91 @@
+==============================================================================
+### 6 - Packages (Macros and Graphics) - Part 1
+==============================================================================
+
+==============================================================================
+## Different paper size
+==============================================================================
+
+\documentclass [10pt, letterpaper] {article}
+\documentclass [10pt, a4paper] {article}
+
+==============================================================================
+## different page margin
+==============================================================================
+
+in the preamble, after documentclass, write, 
+\usepackage{fullpage}
+This will generate a page margin of 1 inch. 
+
+\usepackage[margin=1in]{geometry}
+will generate a page margin of 1 inch on each sides. 
+
+\usepackage[top = 1 in, bottom = 1 in, left = 0.5 in, right = 0.5 in]{geometry}
+
+
+
+==============================================================================
+## \usepackage{amsfonts}
+==============================================================================
+
+\item This is the symbol for the set of all real numbers: $\mathbb{R}$.
+
+\item This is the symbol for the set of integers: $\mathbb{Z}$.
+
+\item This is the symbol for the set of rationals: $\mathbb{Q}$.
+
+
+
+==============================================================================
+## Macro (custom latex command, to use repetitively) 
+==============================================================================
+
+Define in the preamble: 
+\def\eq1{y=\dfrac{x}{3x^2+x+1}}
+Use it inside the document: 
+\item \calculator\ Let's examine the function $\eq1$.
+
+
+==============================================================================
+## Including images
+==============================================================================
+
+\usepackage{graphicx}
+
+# Changing scale
+-----------------
+
+\includegraphics[scale=0.2]{limit}
+\includegraphics[width=3.5 in]{limit}
+\includegraphics[width=0.4\textwidth]{limit}
+
+# alignment
+------------
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{limit}
+\end{center}
+
+\begin{flushleft}
+\includegraphics[width=0.4\textwidth]{limit}
+\end{flushleft}
+
+\begin{flushright}
+\includegraphics[width=0.4\textwidth]{limit}
+\end{flushright}
+
+# figure environment
+---------------------
+
+% put [H] to make sure it shows where you wrote it
+% \usepackage{float} to use [H]
+
+\begin{figure}[H]
+
+\centering
+
+\includegraphics[width=0.4\textwidth]{limit}
+
+\caption{The Squeeze Theorem}
+
+\end{figure}

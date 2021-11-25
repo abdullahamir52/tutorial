@@ -1,0 +1,161 @@
+\documentclass{beamer}
+
+\usepackage{multicol,graphicx}
+
+\usetheme{Darmstadt}
+%\usecolortheme{beetle}
+
+\title{Welcome to Beamer}
+\author{Chowdhury Amir Abdullah}
+\institute{University of Dhaka}
+\date{\today}
+
+
+\begin{document}
+
+
+
+\begin{frame}
+% you can use \titlepage or \maketitle to make beamer title page
+\maketitle
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Presentations with beamer: Frames}
+\section{Section 1}
+\tableofcontents[currentsection]
+\begin{itemize}
+\item Use \texttt{frametitle} to give the frame a title.
+\item Then add content to the frame.
+\item The source for this frame looks like ...
+\end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Presentations with beamer: Frames}
+\section{Section 2}
+\tableofcontents[currentsection]
+\begin{itemize}
+\item Use \texttt{frametitle} to give the frame a title.
+\item Then add content to the frame.
+\item The source for this frame looks like ...
+\end{itemize}
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Presentations with beamer: Frames}
+\section{Section 3}
+\tableofcontents[currentsection]
+\begin{itemize}
+\item Use \texttt{frametitle} to give the frame a title.
+\item Then add content to the frame.
+\item The source for this frame looks like ...
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{columns}
+\begin{column}{0.4\textwidth}
+\begin{itemize}
+\item Use the columns ...
+\item The argument ...
+\item See also the ...
+\end{itemize}
+\end{column}
+\begin{column}{0.6\textwidth}
+\begin{itemize}
+\item Use the columns ...
+\item The argument ...
+\item See also the ...
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+I should \emph{emphasise} that this is an \alert{important} point.\\
+Text in \textbf{bold face}.\\
+Text in \textit{italics}.\\
+It \textcolor{red}{stops} and \textcolor{green}{starts}.\\
+\end{frame}
+
+
+\begin{frame}
+\begin{figure}
+\includegraphics[width=0.5\textwidth]{gerbil}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}
+\begin{center}
+\begin{tabular}{lrr}
+Item & Qty & Unit \$ \\
+Widget & 1 & 199.99 \\
+Gadget & 2 & 399.99 \\
+Cable & 3 & 19.99 \\
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\begin{center}
+\begin{tabular}{|l|r|r|} \hline
+Item & Qty & Unit \$ \\\hline
+Widget & 1 & 199.99 \\
+Gadget & 2 & 399.99 \\
+Cable & 3 & 19.99 \\\hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\begin{block}{Different themes}
+See \url{https://deic-web.uab.cat/~iblanes/beamer_gallery/index_by_theme.html}  for a large collection of themes.
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+A frame can generate multiple slides.\\[6pt]
+Use the slash pause command to show only part of a slide.\\[6pt]
+There many more clever ways of making animations in beamer; see also the only, alt, and uncover commands.\\[6pt]
+\end{frame}
+
+
+
+\begin{frame}
+\begin{itemize}
+\item Can you feel the
+\pause \item anticipation?
+\end{itemize}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

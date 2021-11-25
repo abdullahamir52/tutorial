@@ -1,0 +1,61 @@
+==============================================================================
+### Beginning instruction
+==============================================================================
+
+==============================================================================
+## To make a pdf
+==============================================================================
+
+==============================================================================
+# Before you start compiling
+==============================================================================
+
+The text are gonna be colored black, where as the command will be colored
+blue or any other color.
+
+Press ' Ctrl + , ' to get to the preference menu.
+
+Under 'command' tab, find the 'pdf viewer' option and select the 'embed' option.
+
+Also select 'launch the clean tool when exiting Texmaker'.
+
+Under the 'quick build' tab, select the 'pdflatex + view pdf' option.
+
+Under the 'editor' tab, select whatever option you think you might need.
+
+Under the 'editor' tab, set 'background' color as : #000000 
+
+Under the 'editor' tab, set 'comment' color as : #ff9900
+
+Under the 'editor' tab, set 'LaTeX command' color as : #00ffff
+
+After you are done, click 'ok'.
+
+Now you are ready to begin.
+
+
+==============================================================================
+# Compiling your first document
+==============================================================================
+
+Select the 'Quick Build' option next to the 'view pdf' option in your screen.
+This will compile the code and make the pdf simultaneously.
+
+Press F1 to compile the code.
+
+Leave a gap in line > latex will start a new paragraph, with indent.
+
+Write '//' two backslashes at the end of the line, then latex will just start
+a new line, and not create a new paragraph.
+
+Put dollar sign '$' before and after you write something that has mathematical
+notation in it.
+
+To keep an equation/any math formula intact, and not get divided in two lines,
+then put curly brackets '{}' in between them to keep them locked in.
+
+There are two math modes. There is displayed math mode and there is inline math
+mode.
+
+In displayed math mode, equation are given a separate line. To do that, just
+put two '$' sign in front of the equation.

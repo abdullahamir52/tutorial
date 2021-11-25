@@ -1,0 +1,109 @@
+\documentclass{article}
+\usepackage{amsmath, graphicx}
+\usepackage{natbib}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{hyperref}
+
+\title{Ten Secrets to Giving a Good Scientific Talk}
+\author{Chowdhury Amir Abdullah}
+
+\begin{document}
+\maketitle
+
+
+\section{Introduction}
+
+The text for this exercise is a significantly abridged, and slightly modified, version of the excellent article of the same name by Mark Schoeberl and Brian Toon: \url{http://www.cgd.ucar.edu/cms/agu/scientific_talk.html}
+
+
+\section{The Secrets}
+\label{sec:method}
+
+I have compiled this personal list of ``Secrets'' from listening to effective and ineffective speakers. I don’t pretend that this list is comprehensive — I am sure there are things I have left out. But, my list probably covers about 90\% of what you need to know and do.
+
+\begin{enumerate}
+\item  Prepare your material carefully and logically. Tell a story.
+\item  Practice your talk. There is no excuse for lack of preparation.
+\item Don’t put in too much material. Good speakers will have one or two central points and stick to that material.
+\item Avoid equations. It is said that for every equation in your talk, the number of people who will understand it will be halved. That is, if we let $q$ be the number of equations in your talk and $n$ be the number of people who understand your talk, it holds that:
+\begin{equation}
+n = \gamma \left(\frac{1}{2}\right)^{2} \label{eq:fundamental}
+\end{equation}
+where $\gamma$ is a constant of proportionality.
+\item Have only a few conclusion points. People can’t remember more than a couple things from a talk especially if they are hearing many talks at large meetings.
+\item Talk to the audience not to the screen. One of the most common problems I see is that the speaker will speak to the viewgraph screen.
+\item Avoid making distracting sounds. Try to avoid ``Ummm'' or ``Ahhh'' between sentences.
+\item  Polish your graphics. Here is a list of hints for better graphics:
+	\begin{itemize}
+	\item Use large letters.
+	\item Keep the graphics simple. Don’t show graphs you won’t need.
+	\item Use color.
+	\end{itemize}
+\item  Be personable in taking questions.
+\item Use humor if possible. I am always amazed how even a really lame joke will get a good laugh in a science talk.
+\end{enumerate}
+
+
+
+
+
+\section{Conclusions}
+\label{sec:conc}
+
+Our contributions are threefold. To begin with, we concentrate our efforts on disproving that gigabit switches can be made random, authenticated, and modular. Continuing with this rationale, we motivate a distributed tool for constructing semaphores (LIVING), which we use to disconfirm that public-private key pairs and the location-identity split can connect to realize this objective. Third, we confirm that A* search and sensor networks are never incompatible.\\[6pt]
+
+
+
+
+%We use square brackets [ ] for optional arguments, instead of curly brackets.
+
+% \includegraphics accepts optional arguments that allow you to transform the image when it is included. For example, width=0.3\textwidth makes the image take up 30% of the width of the surrounding text (\textwidth).
+
+% \documentclass accepts optional arguments, too. Example: 
+% \documentclass[12pt,twocolumn]{article}
+% makes the text bigger (12pt) and puts it into two columns.
+
+\newpage
+\section*{Floats}
+
+% Allow LATEX to decide where the figure will go (it can float"). 
+% You can also give the figure a caption, which can be referenced with \ref.
+
+
+
+\includegraphics[width=0.5\textwidth]{1}
+\includegraphics[width=0.3\textwidth, angle=270]{1}
+
+Figure \ref{fig:gerbil} shows \ldots
+
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{1}
+\caption{\label{fig:gerbil}Aww\ldots.}
+\end{figure}
+
+\newpage
+\newpage
+\section*{Tables}
+
+\begin{tabular}{lrr}
+Item & Qty & Unit \$ \\
+Widget & 1 & 199.99 \\
+Gadget & 2 & 399.99 \\
+Cable & 3 & 19.99 \\
+\end{tabular}
+\\[6pt]
+
+\begin{tabular}{|l|r|r|} \hline
+Item & Qty & Unit \$ \\\hline
+Widget & 1 & 199.99 \\
+Gadget & 2 & 399.99 \\
+Cable & 3 & 19.99 \\\hline
+\end{tabular}
+
+%Use an ampersand & to separate columns and a doublebackslash \\ to start a new row (like in the align* environment that we saw in part 1).
+
+\end{document}

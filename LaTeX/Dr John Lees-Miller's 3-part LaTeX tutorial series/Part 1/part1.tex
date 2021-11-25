@@ -1,0 +1,195 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{lmodern}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Chowdhury Amir Abdullah}
+
+\usepackage{float}
+
+\begin{document}
+
+
+The rain in Spain falls \emph{mainly} on the plain.
+
+
+\begin{itemize}
+\item Tea
+\item Milk
+\item Biscuits
+\end{itemize}
+
+
+
+\begin{figure}[H]
+\includegraphics{1}
+\end{figure}
+
+
+\begin{equation}
+\alpha + \beta + 1
+\end{equation}
+
+
+% For the most part, you can just type your text normally.
+
+Words are separated by one or more
+spaces.
+
+Paragraphs are separated by one
+or more blank lines.
+
+
+% Space in the source file is collapsed in the output.
+The rain			 in 					Spain
+falls mainly 				on the				 plain.
+
+
+
+Quotation marks are a bit tricky:
+use a backtick on the left and an apostrophe on the right.
+
+Single quotes: `text' . 
+
+Double quotes: ``text'' . \\ [6pt]
+
+
+Some common characters have special meanings in \LaTeX\: \\
+\$\%\&\#!
+
+
+In March 2006, Congress raised that ceiling an additional $\$0.79$
+trillion to $ \$8.97$ trillion, which is approximately $68\%$ of GDP.  As of
+October 4, 2008, the ``Emergency Economic Stabilization Act of
+2008'' raised the current debt ceiling to $\$11.3$ trillion. \\[6pt]
+
+In March 2006, Congress raised that ceiling an additional \$0.79 trillion to \$8.97 trillion, which is approximately 68\% of GDP. As of October 4, 2008, the ``Emergency Economic Stabilization Act of 2008'' raised the current debt ceiling to \$11.3 trillion.\\[6pt]
+
+
+% not so good:
+Let a and b be distinct positive
+integers, and let c = a - b + 1. \\[6pt]
+
+% much better:
+Let $a$ and $b$ be distinct positive
+integers, and let $c = a - b + 1$. \\[6pt]
+
+% LATEX handles spacing automatically; it ignores your spaces.
+Let $y=mx+b$ be \ldots\\[6pt]
+
+Let $y = m x + b$ be \ldots\\[6pt]
+
+ Use caret  for superscripts and underscore  for subscripts.\\[6pt]
+$y = c_2 x^2 + c_1 x + c_0$ \\[6pt]
+
+ Use curly braces to group superscripts and subscripts.\\[6pt]
+$F_n = F_n-1 + F_n-2$ \\[6pt] % oops!
+$F_n = F_{n-1} + F_{n-2}$ \\[6pt] % ok!
+
+There are commands for Greek letters and common notation. \\[6pt]
+$$\mu = A e^{Q/RT}$$\\[6pt]
+$$\Omega = \sum_{k=1}^{n} \omega_k$$\\[6pt]
+
+% If it's big and scary, display it on its own line using\begin{equation} and \end{equation}.
+
+The roots of a quadratic equation are given by: 
+\begin{equation}
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}
+{2a}
+\end{equation}
+where $a$, $b$ and $c$ are \ldots the coefficients of the quadratic equation. \\[6pt]
+
+Caution: LATEX mostly ignores your spaces in mathematics, but it can't handle blank lines in equations | don't put blank lines in your mathematics.\\[6pt]
+
+% Note how the sigma is bigger in the equation environment, and how the subscripts and superscripts change position, even though we used the same commands.
+% In fact, we could have written $...$ as \begin{math}...\end{math}.
+
+\newpage
+
+\begin{itemize} % for bullet points
+\item Biscuits
+\item Tea
+\end{itemize}
+
+
+\begin{enumerate} % for numbers
+\item Biscuits
+\item Tea
+\end{enumerate}
+
+
+
+
+%All of the commands and environments we've used so far are built into LATEX.
+
+%Packages are libraries of extra commands and environments.
+
+%There are thousands of freely available packages.
+
+%I We have to load each of the packages we want to use with a \usepackage command in the preamble.
+% Example: amsmath from the American Mathematical Society.
+
+%Use equation* (\equation-star") for unnumbered equations.
+
+\begin{equation*}
+\Omega = \sum_{k=1}^{n} \omega_k
+\end{equation*}
+
+
+%LATEX treats adjacent letters as variables multiplied together, which is not always what you want. amsmath denes commands for many common mathematical operators.
+
+\begin{equation*} % bad!
+min_{x,y} (1-x)^2 + 100(y-x^2)^2
+\end{equation*}
+
+
+\begin{equation*} % good!
+\min_{x,y}{(1-x)^2 + 100(y-x^2)^2}
+\end{equation*}
+
+
+%You can use \operatorname for others.
+
+\begin{equation*}
+\beta_i =
+\frac{\operatorname{Cov}(R_i, R_m)}
+{\operatorname{Var}(R_m)}
+\end{equation*}
+
+
+%Align a sequence of equations at the equals sign with the align* environment.
+
+\begin{align*}
+(x+1)^3 &= (x+1)(x+1)(x+1) \\
+&= (x+1)(x^2 + 2x + 1) \\
+&= x^3 + 3x^2 + 3x + 1
+\end{align*}
+
+
+An ampersand \& separates the left column (before the =) from the right column (after the =). \\[6pt]
+ A double backslash \ \ starts a new line.\\[6pt]
+
+Let $ X_1, X_2,  \ldots, X_n $ be a sequence of independent and identically distributed random variables with $ E[X_i] = \mu $ and VAR$[X_i] = \sigma ^2 < \infty $, and let
+
+\begin{equation*}
+S_n = \frac{1}{n} \sum_{i=1}^{n} X_i
+\end{equation*}
+
+denote their mean. Then as $n$ approaches infinity, the random variables $ \sqrt{n} (S_n - \mu) $ converge in distribution to a normal $ N(0, \sigma ^2)$ \\[6pt]
+
+
+Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with
+$\operatorname{E}[X_i] = \mu$ and
+$\operatorname{Var}[X_i] = \sigma^2 < \infty$, and let
+\begin{equation*}
+S_n = \frac{1}{n}\sum_{i=1}^{n} X_i
+\end{equation*}
+denote their mean. Then as $n$ approaches infinity, the random variables $\sqrt{n}(S_n - \mu)$ converge in distribution to a normal $N(0, \sigma^2)$. $\mathcal{N}(0, \sigma^2)$ \\[6pt]
+
+% bonus points: the N for normal is usually set in a caligraphic font; you can get this using $\mathcal{N}(0, \sigma^2)$.
+
+\end{document}

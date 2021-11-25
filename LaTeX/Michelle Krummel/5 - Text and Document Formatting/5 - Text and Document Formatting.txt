@@ -1,0 +1,97 @@
+==============================================================================
+### Text and document formatting
+==============================================================================
+
+==============================================================================
+## font looks, link
+==============================================================================
+
+This will produce \textit{italicized} text. 
+
+This will produce \textbf{bold face} text. 
+
+This will produce \textsc{small caps} text. 
+
+This will produce \texttt{typewriter} text. 
+
+\url{http://michellekrummel.com} show the link and connect. 
+
+\href{http://michellekrummel.com}{her website} will show 'her website' but 
+connect to the link.
+
+==============================================================================
+## font size
+==============================================================================
+
+\begin{Huge}dear aunt Sally. \end{Huge}
+\begin{huge} dear aunt Sally. \end{huge}
+\begin{LARGE} dear aunt Sally. \end{LARGE}
+\begin{Large} dear aunt Sally. \end{Large}
+\begin{large} dear aunt Sally. \end{large}
+\begin{normalsize} dear aunt Sally. \end{normalsize}
+\begin{scriptsize} dear aunt Sally. \end{scriptsize}
+\begin{tiny} dear aunt Sally. \end{tiny}
+
+==============================================================================
+## Justified
+==============================================================================
+
+\begin{center}This line is centered. \end{center}
+
+\begin{flushleft}This line is left-justified. \end{flushleft}
+
+\begin{flushright}This line is right-justified. \end{flushright}
+
+
+==============================================================================
+## Justified 2.0
+==============================================================================
+
+\centering
+All the line after this will be centered. \\
+This line is left-justified. \\
+This line is right-justified. 
+
+\LARGE
+All the line after this will be LARGE. \\
+This line is left-justified. \\
+This line is right-justified. 
+
+\flushright \normalsize
+All the line after this will be normalsized and right-justified. \\
+This line is left-justified. \\
+This line is right-justified. 
+
+\flushleft \tiny
+All the line after this will be tiny and left-justified. \\
+This line is left-justified. \\
+This line is right-justified. 
+
+
+
+==============================================================================
+## title
+==============================================================================
+
+You need to type in the preamble.
+
+\title{My \LaTeX\ Document}
+\author{Chowdhury Amir Abdullah}
+\date{\today}
+
+or
+\title{My \LaTeX\ Document}
+\author{Chowdhury Amir Abdullah}
+\date{July 26, 2020}
+
+
+then inside the document type: 
+\maketitle
+
+
+==============================================================================
+## table of contents
+==============================================================================
+
+inside the document, type:
+\tableofcontents

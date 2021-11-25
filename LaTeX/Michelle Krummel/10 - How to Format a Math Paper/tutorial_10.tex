@@ -1,0 +1,275 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{graphicx, float}
+\usepackage[none]{hyphenat}
+\usepackage[margin = 1 in]{geometry}
+\usepackage{fancyhdr} % let's you customize header and footer
+
+\usepackage{multirow, multicol}
+
+\usepackage[nottoc, notlot, notlof]{tocbibind} % to use table of contents
+
+\usepackage{hyperref}
+
+\usepackage{multirow}
+
+% This removes the paragraph indentation 
+% \parindent 0px 
+
+% Changing the paragraph indentation
+% \setlength{\parindent}{4 em}
+ 
+% Changing spacing in between paragraphs
+\setlength{\parskip}{1 em}
+ 
+% Changing the line spacing
+% \renewcommand{\baselinestretch}{1.5}
+ 
+
+\pagestyle{fancy} 
+\fancyhead{} % to clear the default header and footer
+\fancyfoot{}
+
+
+% Changing header
+\fancyhead[L] { \slshape \MakeUppercase{My first \LaTeX\ Research paper}}
+\fancyhead[R] { \slshape Chowdhury Amir Abdullah }
+
+\fancyfoot[C] {\thepage}
+
+% This removes the horizontal line in the header.
+% \renewcommand{\headrulewidth}{0pt}
+
+% This removes the horizontal line in the footer.
+% \renewcommand{\footrulewidth}{0pt}
+
+\author{Chowdhury Amir Abdullah}
+\title{How to Format a Math Paper}
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{center}
+\Huge {\textbf{Future of Growth Perspective through Investment }} \\ [6 pt]
+\Large {An Econometric Case Study of Bangladesh} \\ 
+\vfill
+
+\line(1,0){400} \\ [1 mm]
+
+
+\Large {\textbf{\textit{Abstract}}}\\ [3 mm]
+\end{center}
+
+\normalsize {\textbf{ - Since its independence in 1971 with a war-torn economy, Bangladesh has shown tremendous resilience, experiencing a near 7 \% growth earlier in the 21st century, driven primarily by manufacturing and export-oriented industries. This has resulted in a striking reduction in poverty and a large middle class. But like other developing countries Bangladesh faces many challenges of industrialization such as less employment opportunities, skill mismatch, coupled with technological innovation and stagnant investment scenario. With forty-one years of time series data, this paper will try to find long term relationship in investing in capital formulation to tap into the unskilled-labor intensive manufacturing sector and changes in fundamental institutional policies. Co-integration techniques were applied to find the long-run relationship and it seems that rise in investment is positively related whereas trade openness and increase in standard of living is negatively related to manufacturing share of GDP. The estimated results emphasized the importance of creating a business-friendly environment to maintain the growth and supporting home-grown industries.  - }}
+
+\line(1,0){400} \\ [1 mm]
+
+\vfill
+
+\flushleft 
+{
+Authors: 
+
+
+\begin{enumerate}
+\item Chowdhury Amir Abdullah 
+\item[] \textit{\small {\href{mailto:abdullahamir52@yahoo.com}{Email: abdullahamir52@yahoo.com}}}
+
+\item John Doe
+\item[] \textit{\small {\href{mailto:johndoe@email.com}{Email: johndoe@email.com}}}
+
+\item Jane Doe
+\item[] \textit{\small {\href{mailto:janedoe@email.com}{Email: janedoe@email.com}}}
+
+\end{enumerate}
+
+}
+
+
+
+
+Date: \today
+
+
+\end{titlepage}
+
+\tableofcontents
+\thispagestyle{empty} % to remove the header and footer on the table of contents page. 
+\clearpage % ToC will have their own page.
+\setcounter{page}{1} % to start the page-counter after the ToC
+
+
+
+\section{Introduction}
+
+\normalsize Industrialization driven by manufacturing growth has shaped our modern world. This made the Europe and the United States to reach a post-industrialized era and made it possible for East Asian countries to converge in the later part of the 20th century. Urbanization and dualistic coexistence, market economy based modern states that we see in today's world are the result of capital investment in manufacturing sector and subsequent industrialization. Developing countries such as Bangladesh is hoping to reach that stage driven primarily by fostering new manufacturing industries. But the business environment is not friendly for investment and recent trends showed that private investment is stagnating for last few years whereas public investment is crowding out the capital necessary for domestic private investment.
+
+In this paper, the primary focus is to find the long-run effect of increase in investment on the manufacturing share of gross domestic product of the country and to see if the looming deindustrialization that Bangladesh faces as its manufacturing shares as a percentage of GDP is shrinking in the first part of this century can be evaded through raising investment. This phenomenon is called premature deindustrialization, (Dasgupta \& Singh, 2006) where a country sheds industrial employment below the income level of industrialized economies when they faced it. As the elasticity of substitution between manufacturing and other sectors are less than unity, the differential rates of technology might be responsible for the drop-in employment and rise in industrial output as the sector, specifically unskilled-labor based sector, (something that Bangladesh’s growth depends on) becomes more capital intensive. (Lawrence \& Lawrence, 2013) This fall in manufacturing employment can also be explained the trade and globalization; as the developing nations opened up their economy, without a strong comparative advantage might reverse their growth made possible by import substitution industrialization. Economically this might reduce the chances of convergence and politically this might result in a democratic failure due to rising unemployment and instability. (Rodrik, Unconditional Convergence in Manufacturing, 2013)
+
+Bangladesh has shown promising growth in early 2000s and the decade that followed, by enjoying the comparative advantage of the labor-intensive readymade garments sector, converting unskilled agricultural male and informal female labor forces and bringing them into the modern, competitive, productive manufacturing sector. How the increase of domestic investment and injection of foreign capital will affect growth is the main theme of this paper. \footnote{An example footnote}
+
+In spite of increased focus on the positive impact of the investment on generating new industries and driving growth, there has been a lack of such study examining the long-run relationship for Bangladesh. With this backdrop, this paper has used time series data of forty-one years (1977-2017) to analyze the impact of investment on manufacturing growth as Bangladesh’s economy is still unskilled-labor intensive. There is expectation of a structural break in the growth of manufacturing sector and investment relationship in the early ‘90s when the country’s economy was opened up and financial environment started become friendly.
+
+\section{Theoretical Background}
+
+\normalsize Developing countries since the end of World War Two has been trying to emulate the growth process that had happened in the West. Many South Asian countries such as Japan in the ‘50s, Taiwan, South Korea in ‘60s, ASEAN countries and specially China in ‘90s were successful to get on the bandwagon of economic growth through a combined policy of Import substitution industrialization (ISI) and export-oriented manufacturing sector. ISI is when a country implements trade and economic policy by increasing domestic production to counter imports.  This growth, almost 4 percentage points faster than other advanced economies (McMillan, Rodrik, \& Sepulveda, 2017) were experienced by South Asian countries such India and Bangladesh, driven primarily by growth of readymade garments (RMG) industries. This should result in closing the income gap with industrialized economies which is called economic convergence. But what Japan and East Asian Tigers experienced might not happen in case of South Asia. Rise of China as a manufacturing giant and its eventual shedding of manufacturing jobs might lead to other developing nations to face what economists like to call “Pre-mature deindustrialization”, where a country becomes a service economy without experiencing a proper taste of industrialization. Trade openness can transfer efficient technologies to developing countries which might lead to increase in production with decrease in employment share. 
+
+(Schultz, 1953), explained that in a closed economy, the growth is originated by increasing the agricultural productivity. Later, many economists explored and improved the idea. But Sir Arthur Lewis argued that non-agriculture sector employment needs to be expanded and supplemented by progress of technology that does not reduce the agricultural output, and that extra labor absorbed into the productive manufacturing sector (Lewis, 1954). But subsequent works by (Field, 1978) used open-economy model that focuses on international trade in the growth perspective.  Subsidizing industry or removing obstacles for business to raise capital investment that can help industrialization far better than broad investment in human capital and institutions; East Asian miracle is a prime example of that (McMillan, Rodrik, \& Sepulveda, 2017). But premature deindustrialization is a significant threat, where a country might experience deindustrialization without getting rich first. Bangladesh is facing an investment crisis where even though the interest rate is low, there is not a significant rise in investment. This might severely hamper the continuous growth that it has been maintaining in the first decade of 21st century. There have not been any studies regarding this prospect and this study will fill the gap that focuses on the future of growth perspective. 
+
+Growths in economies are usually explained by two different types of theories. One is the model developed by (Lewis, 1954) and then formalized and extended by (Fei \& Ranis, 1961). In their model, they explained that surplus labor from traditional agricultural sector moves to the more productive, innovative and accumulative manufacturing/industrial sector, driving the growth process and achieving sustainable development. China is a good example, which experienced a growth in manufacturing industries with virtually no drop in agricultural production. In this type of theories, growth is made possible by moving more people from traditional sector to modern manufacturing sector.  
+
+The other growth theory is based essentially in neoclassical free-market proposition (Solow, 1956), which asserts that liberalization of markets for foreign investment and stimulating domestic investment and increasing capital accumulation (which is similar to raising the domestic savings rate), will increase capital-labor ratio and per-capita income in developing countries. This theory dissolves the differences of different types of economic sectors and assumes that they are structurally analogous and they can be combined into one sector. Growth is assumed to be dependent on the incentive to save, which facilitates into rise in investment. Government can take different policies, such as opening up the economy to trade, financial deregulation, lowering the interest rate through monetary policy to incentivize investment, both foreign and domestic. This increases the capital-labor ratio, facilitating growth (technological change is considered endogenous in this theory) (Grossman \& Helpman, 1991). The country needs to diversify its economy to continue this growth prospect. (Aghion \& Howitt, 1992). As the capital level is low in developing nations, there should be high return to capital accumulation, that would lead to economic convergence. 
+
+These two different theories give us different ideas to explain the economic growth of developing nations, such as Bangladesh. We will combine these ideas and use neoclassical model to focus on the growth of modern sector (manufacturing) and dual-sector model to see the relationship of this growth with flows from other sectors (McMillan, Rodrik, \& Sepulveda, 2017). But how we can make sure that this transfer of labor happens to high productive sector in our economy is a challenge. (Acemoglu, Johnson, \& Robinson, 2001) argues that it’s the institutional capabilities (in Europe and colonies) that generate sustained growth, with different modern sectors, not just a few but across various ranges and service activities. (Glaeser, La Porta, Lopez-de-Silanes, \& Shleifer, 2004) in their research finds a link between different institutions and policies implemented by government and the business environment that expedites growth and increases the long run level of income. 
+
+Dani Rodrik gives a typology in his study, where he shows that a country needs both structural transformation and investment in fundamentals (rule of law, good governance, financial atmosphere) to have rapid and sustained growth based on the neoclassical growth theory. Post-industrialized West and recent examples such as Japan, South Korea have all been through that. (McMillan, Rodrik, \& Sepulveda, 2017)
+
+
+
+\begin{table}[H]
+\def\arraystretch {1.5}
+\centering
+
+
+\begin{tabular}{|c|c|c|c|}
+\hline 
+\hline 
+\multicolumn{2}{|c|}{} & \multicolumn{2}{|c|}{\textbf{\textit{Structural transformation}}} \\ 
+\cline{3-4} 
+\multicolumn{2}{|c|}{} & \textbf{Slow} & \textbf{Rapid} \\ 
+\hline 
+\multirow{2}{*}{\textbf{\textit{Investment in fundamentals}}}  & \textbf{Low} &  No growth & Episodic growth \\ 
+\cline{2-4}
+											& \textbf{High}  & Slow growth & Rapid sustained growth \\ 
+\hline
+\hline 
+\end{tabular} 
+
+\caption{These values represent the function $f(x)$}
+\label{tab: data 1}
+\end{table}
+
+
+The Table \ref{multirow_table} displays a table with a cell spanning multiple rows
+
+		\begin{table} [ht]
+			\centering
+			\scalebox{1.5}
+			{
+			\begin{tabular}{|c|c|c|c|}
+			\hline
+			Sr No. & Header1 & Header2 \\
+			\hline
+			\multirow{2}{*}{1} & data1 & data2 \\
+									 & data 3 & data4 \\
+			\hline
+			2 & data1 & data2 \\
+			\hline
+			\end{tabular}						
+			}
+			\caption{Multirow Table}
+			\label{multirow_table}
+		\end{table}
+
+
+The Table \ref{multicolumn_table} displays a table with multicolumn header. 
+
+\begin{table} [ht]
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		Sr & \multicolumn{3}{c|}{Multicolumn Header} \\
+		\cline{2-4}
+		No. & DataHeader1 & DataHeader 2 & DataHeader 3 \\
+		\hline 
+		1 & data1 & data2 & data3 \\
+		\hline
+		2 & data1 & data2 & data3 \\
+		\hline
+		3 & data1 & data2 & data3 \\
+		\hline
+		4 & data1 & data2 & data3 \\
+		\hline
+	\end{tabular}
+	\caption{Multicolumn Table}
+	\label{multicolumn_table}
+\end{table}
+
+
+
+
+
+\begin{table}[!h] 
+\caption{Comparison of percentages.}
+\begin{tabular}{lclclclclc}
+\hline
+\hline 
+Mode &  Var  &  Cum\\
+\hline
+{}       & EF   & CHF    & EF2   & CHF2\\
+1   &  17.5 & 19.1   & 17.5  & 19.1\\
+2   &  11.8 & 12.7   & 29.3  &  31.9\\
+3   &  6.6  &  5.6         & 35.9    &  37.4\\
+\hline
+\end{tabular}
+\end{table}
+
+This typology (see table \ref{tab: data 1} ) explains that “institutional quality is correlated with income levels” but they are not sufficient to predict the economic growth. The early growth that Bangladesh has experienced since the financial deregulation of 1990s has to be backed up by steady changes in business environment, enhancing domestic and foreign investment. Otherwise, Bangladesh might face a move towards service sector before becoming properly industrialized, like the Dualistic-development theories, a persistent divergence between rich and poor nations; poverty and affluence, modern and traditional sectors, growth and stagnation coexisting in the economy. This is something that India is experiencing as it is riding on the growth of the IT sector and outsourcing services with convergence dynamics but lagging behind in rising employment in highly skill-intensive IT sector as the majority of the labor is skill-intensive in there. And as the rise of technological progress goes on, Bangladesh faces premature deindustrialization as the manufacturing sector becomes more capital and skill intensive and globalization makes the move into service sectors earlier than expected with severe consequence such as lower growth and democratic failure (Rodrik , Premature Deindustrialization, 2015).
+
+\section{Research Objectives}
+
+\normalsize Bangladesh aims to increase its growth of the economy to 9\% by the end of 2030. The growth that it experienced early in the 21st century has been fueled by the manufacturing sector and investment in it but the recent trend showed that private investment is lagging behind in the economy. This paper will try to find out if there is any long-run relationship between manufacturing sector growth and investment (both domestic and foreign) in the context of Bangladesh. It will check how much growth in the modern sector (manufacturing) is affected by changes in financial atmosphere, government policies, and macroeconomic stabilization, paying a close attention to the investment-growth relation in different times, borrowing the ideas of (McMillan \& Rodrik, 2011), and seeing the employment share of the manufacturing sector and factors determining its growth. It will try to see if this trend will continue or will improvements in technology evaporate the comparative advantage that Bangladesh has.
+
+\section{Specification of the Model}
+
+\subsection{Sources of Data}
+
+\subsection{Integration Order of Variables}
+
+\subsection{Co-integration Test}
+
+\subsection{Error Correction Test}
+
+\subsection{Structural Break Test }
+
+\section{Empirical Analysis}
+
+\subsection{Stationarity Properties}
+
+\subsection{Co-integration Analysis}
+
+\subsection{Long Term Relationship}
+
+\subsection{Diagnostic Results}
+
+\section{Conclusion}
+
+\normalsize Based on our analysis, using Vector Error Correction Model (VECM), after checking for stationarity and cointegration, we can see that there exists a stable long-run relationship among manufacturing employment share of \% of GDP and investment (both domestic and foreign), trade openness, and per-capita GDP.
+Increase (decrease) in domestic investment, foreign investment in and out of the country are found to have a positive (negative) impact in the manufacturing share of the country and increase (decrease) in per-capita GDP and trade are found to have a negative (positive) impact in the manufacturing share of the country. The long-run dynamic model appears to be stable for the country and the disequilibrium appears to correct itself. The short-run dynamic model tells us that the Foreign direct investment, net outflows (\% of GDP) does not have any short-run impact in correcting the equilibrium, as expected, since the economy of the country is relatively small. There exists a structural break in the year of 1992, when the economy was opened up and the trade openness started to make an impact; investment since then had larger impact on manufacturing growth. The limitation of the model is that the data appears to be serially correlated with non-normal distribution.  \cite{einstein}
+
+With better institutions, property rights and less distortionary policies, Bangladesh will be able to invest in human and physical capital, raising employment and income, which will be consistent with the findings of (Acemoglu, Johnson, \& Robinson, 2001). Weak infrastructure and poor business environment make doing business in Bangladesh hard. Restructuring of the trade policies to expand and diversify the economy and attract foreign investment, and reform of the ailing banking sector to increase domestic investment is needed. With all of these policies in place, Bangladesh can hope to maintain the growth and achieve the economic convergence with the developed world. \cite{latexcompanion}
+
+\newpage
+
+\begin{thebibliography}{9}
+\bibitem{latexcompanion} 
+Michel Goossens, Frank Mittelbach, and Alexander Samarin. 
+\textit{The \LaTeX\ Companion}. 
+Addison-Wesley, Reading, Massachusetts, 1993.
+
+\bibitem{einstein} 
+Albert Einstein. 
+\textit{Zur Elektrodynamik bewegter K{\"o}rper}. (German) 
+[\textit{On the electrodynamics of moving bodies}]. 
+Annalen der Physik, 322(10):891–921, 1905.
+
+\bibitem{knuthwebsite} 
+Knuth: Computers and Typesetting,
+\\\texttt{http://www-cs-faculty.stanford.edu/\~{}uno/abcde.html}
+\end{thebibliography}
+
+\end{document}

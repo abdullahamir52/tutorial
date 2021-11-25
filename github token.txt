@@ -1,0 +1,20 @@
+git config --global user.name "abdullahamir52"
+git config --global user.email abdullahamir52@gmail.com
+
+git clone Project_URL
+
+git add -A
+
+git commit -m "message_with_the_commit"
+
+git push origin main
+
+git push origin master
+
+abdullahamir52
+
+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
+
+
+MyBabyBlue
+cd "C:\Users\abdul\github\tutorial"

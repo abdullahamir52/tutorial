@@ -1,0 +1,114 @@
+==============================================================================
+### Brackets, tables and arrays
+==============================================================================
+ 
+' \in ' is the belongs to symbol. e.g (a,b,c) belongs to a set.
+
+' \mathbb{R} ' is the set of real numbers.
+
+In the pre-emble, write ' \parindent 0px ' to make the paragraph not indent 
+in the beginning.
+
+
+==============================================================================
+## Brackets
+==============================================================================
+
+In order to show the curly brackets, you have to type a backslash in front
+of it. Like $\{1,2,3\}$
+
+Same thing goes for the dollar sign: $ \$11.50 $
+
+$2(\frac{1}{x^2-1})$\\[6pt]
+
+To cover the entire fraction with the bracket, use \left and \right. e.g.
+$$2\left(\frac{1}{x^2-1}\right)$$\\[6pt]
+$$2\left\{\frac{1}{x^2-1}\right\}$$\\[6pt]
+$$2\left[\frac{1}{x^2-1}\right]$$\\[6pt]
+
+Use similar tactics with absolute value. e.g.
+$$2\left |   \frac{1}{x^2-1}    \right |    $$\\[6pt]
+
+To get the angular vector bracket, use \langle and \rangle
+$$2\left \langle   \frac{1}{x^2-1}    \right \rangle    $$\\[6pt]
+
+If you just want to use one bracket/absolute value symbol, just put a full 
+stop after \left. e.g.
+$$ \left. \frac{dy}{dx} \right| _{x=1}  $$
+
+Complex fraction:
+$$ \left(   \frac{1} { 1 + \left( \frac{1}{1+x}  \right) }  \right)   $$
+
+
+==============================================================================
+## Tables
+==============================================================================
+
+To create a table, type 
+
+\begin{tabular}{|c|c|c|c|c|c|}
+\end{tabular}
+
+Inside the second curly bracket, type ' ccc '  to get three columns with 
+values center-aligned. Type ' rrr ' to get right-aligned and ' lll ' to get 
+left-aligned. Or you get to do some combination: ' crl ' 
+
+Type ' | ' in between c,r or l to separate the values with a line. 
+
+After you are done with a row, type two back slashes. 
+
+Type \hline to get a horizontal line. 
+
+Type \vspace{1cm} to get some space in between the tables. 
+
+\usepackage {float} to use the table where you want. 
+
+\begin {table} [H] to keep the table where you write the code. 
+
+\begin{table} [H]
+\def\arraystretch {1.2}
+to add some space in between the rows and fit the fractions within the table.
+
+\begin{table} [H]
+\def\arraystretch {1.5}
+\centering
+to center the table within the page. 
+
+\caption{These values represent the function $f(x)$}
+\end{table}
+to write a caption. You can also add the caption in the beginning of the table. 
+
+\begin{tabular}{|l|p{12cm}|}
+to make the second column a paragraph so that the long caption fits within
+the page and doesn't go outside. 
+
+==============================================================================
+## Equation arrays
+==============================================================================
+
+\begin{align}
+5x^2
+\end{align}
+
+Within the align environment, everything is in math mode. To write text, type
+\text {place your text here.}
+
+In align environment, compiler ignores the space in between the equation. 
+So: 
+
+\begin{align}
+5                    x^2 \text{place your words here.}
+\end{align}
+
+will give us: 
+
+5x^2place your words here.
+
+So you can put some space in the \text command or you can write a ' \, '
+backslash comma to get some space. 
+
+To align the equation at the equal sign, just put an ampersand in front of 
+the equal sign. 
+
+\begin{align*}
+doesn't number the equations. 
