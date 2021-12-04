@@ -1,6 +1,21 @@
-kdenlive (video editing software)
------------------------------------
+=========================================================================
+ 				Softwares for Linux
+=========================================================================
+
+=========================================================================
+ 			kdenlive (video editing software)
+=========================================================================
 sudo snap install kdenlive
 
-
-
+=========================================================================
+			    	 Avro Keyboard
+=========================================================================
+1. Open Ubuntu Software
+2. Search "Avro Phonetic" in Ubuntu Software
+3. Click "Install"
+4. Open "Settings" > "Region & Language"
+5. Click on the "+" (plus) icon in Input Sources
+6. Search for "Bangla"
+7. click on "Other" and select "Bangla (Avro Phonetic)"
+   The Avro Phonetic will be added to the Input Sources
+8. You can switch between different Input Source using "win + space" 
