@@ -13,8 +13,7 @@ git push origin master
 
 abdullahamir52
 
-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
-
+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
 
 MyBabyBlue
 cd "C:\Users\abdul\github\tutorial"
