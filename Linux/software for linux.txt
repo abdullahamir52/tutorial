@@ -19,3 +19,9 @@ sudo snap install kdenlive
 7. click on "Other" and select "Bangla (Avro Phonetic)"
    The Avro Phonetic will be added to the Input Sources
 8. You can switch between different Input Source using "win + space" 
+
+
+=========================================================================
+			    	    Nomacs
+=========================================================================
+sudo apt install nomacs
