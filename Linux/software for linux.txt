@@ -25,3 +25,26 @@ sudo snap install kdenlive
 			    	    Nomacs
 =========================================================================
 sudo apt install nomacs
+
+
+=========================================================================
+		    Pinta (Microsoft Paint Alternative)
+=========================================================================
+Install Pinta from Pinta maintainers PPA repository using terminal 
+(for advanced users)
+
+1. Open terminal 
+CTRL+ALT+T
+
+2. Add Pinta stable PPA repository:
+sudo add-apt-repository ppa:pinta-maintainers/pinta-stable
+Note: Instead of pinta-stable you can add pinta-daily if you like to 
+test latest and the greatest Pinta, but it may be buggy.
+
+3. Update system package lists:
+sudo apt-get update
+
+4. Install pinta:
+sudo apt-get install pinta
+
+
