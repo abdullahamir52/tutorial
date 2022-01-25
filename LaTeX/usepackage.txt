@@ -1,6 +1,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
-\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{amsmath, amsfonts, amssymb, amsthm}
 \usepackage{graphicx, lmodern, float, hyperref}
 \usepackage{multirow, multicol, dcolumn, tabularx, array}
 \usepackage[table]{xcolor}
@@ -19,7 +19,24 @@
 
 \usepackage{animate}
 
+\usepackage{lipsum} % for dummy text
+\usepackage{enumitem}
+
+\usepackage{natbib}
+\usepackage{epstopdf}
+\usepackage{verbatim}
+\usepackage{color}
+%\usepackage{caption}
+\usepackage[bottom]{footmisc}
+\usepackage{version}
+\usepackage{indentfirst}
+\usepackage{scalefnt}
+\usepackage{rotating}
+
+
 
 \usepackage{pdfpages}
 To include all the pages in the PDF file:
 \includepdf[pages=-]{myfile.pdf}
+
+
