@@ -25,6 +25,30 @@ sys.modules[__name__].__dict__.clear()
 # to exit python from Command prompt
 quit() or Ctrl + z 
 
+
+# changing directory
+# Python3 program to change the
+# directory of file using os.chdir() method
+# import os library
+import os
+# change the current directory
+# to specified directory
+os.chdir(r"/home/abdullahamir52/github/NCSU/1st year/705 Macroeconomics II/HW/HW1")
+print("Directory changed")
+
+
+# Current directory
+# import os module
+import os
+# change the current working directory
+# to specified path
+os.chdir(r"/home/abdullahamir52/github/NCSU/1st year/705 Macroeconomics II/HW/HW1")
+# verify the path using getcwd()
+cwd = os.getcwd()
+# print the current directory
+print("Current working directory is:", cwd)
+
+
 # =============================================================================
 # CMD commands
 # =============================================================================
