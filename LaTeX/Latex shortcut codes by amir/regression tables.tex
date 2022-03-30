@@ -1,0 +1,54 @@
+**********************************************************************
+**** Stata (Logit, Probit, Ordered Probit with Mean and Variance) ****
+**********************************************************************
+
+\begin{table}[H]
+\def\arraystretch {1.5}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+\hline 
+\hline 
+\multicolumn{2}{|c|}{\textbf{}} & \multicolumn{2}{c|}{\textbf{\textit{\textbf{$OLS$}}}} & \multicolumn{2}{c|}{\textbf{\textit{\textbf{$Tobit$}}}} & \multicolumn{2}{c|}{\textbf{\textit{\textbf{$Ordered \, Probit$}}}} \\ 
+\cline{3-8} 
+\multicolumn{2}{|c|}{\textbf{}} & \textbf{Mean} & \textbf{Variance} & \textbf{Mean} & \textbf{Variance} & \textbf{Mean} & \textbf{Variance}\\ 
+\hline 
+\multirow{2}{*}{\textbf{\textit{N=200}}}	    & \pmb{$\beta_0$}  	& 0.6362 & 0.0006 & 1.0103 & 0.0107 & -1.0092 & 0.0144\\ 	
+												& \pmb{$\beta_1$} 	& 0.2612 & 0.0004 & 1.0228 & 0.0217 &  1.0162 & 0.0129\\ 		
+\cline{1-8}
+\multirow{2}{*}{\textbf{\textit{N=400}}}	    & \pmb{$\beta_0$} 	& 0.6356 & 0.0003 & 1.0038 & 0.0051 & -1.0073 & 0.0068\\
+												& \pmb{$\beta_1$}   & 0.2606 & 0.0002 & 1.0084 & 0.0102 &  1.0087 & 0.0063\\
+\cline{1-8} 
+\multirow{2}{*}{\textbf{\textit{N=800}}}	    & \pmb{$\beta_0$} 	& 0.6350 & 0.0001 & 1.0018 & 0.0025 & -1.0013 & 0.0033\\ 
+												& \pmb{$\beta_1$}   & 0.2604 & 0.0001 & 1.0078 & 0.0055 &  1.0057 & 0.0035\\ 
+\hline
+\hline 
+\end{tabular} 
+\caption{Means and variances of $\beta_0$ \& $\beta_1$ in regressions}
+\label{tab: data 1}
+\end{table}
+
+
+
+
+************************
+**** Stata (Probit) ****
+************************
+
+
+\begin{table}[H]
+\def\arraystretch {1.5}
+\centering
+\begin{tabular}{c|c c c c }
+\multicolumn{2}{c}{\textbf{• Regression}}  & & Number of Obs 	& = •\\
+\multicolumn{2}{c}{} 					   & & LR $\chi^2$ (2) & = •\\
+\multicolumn{2}{c}{} 					   & & Prob $ >\chi^2$	& = •\\
+\multicolumn{2}{c}{Log likelihood = •}     & & Pseudo $R^2$ 	& = •\\
+\hline
+w & Coef. & Std. Error & Z & P $> |z| $ \\
+\hline
+• & • & • & • & •\\
+• & • & • & • & •\\
+• & • & • & • & •\\
+\hline
+\end{tabular}
+\end{table}
