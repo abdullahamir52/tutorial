@@ -1,6 +1,10 @@
-# To update packages
-old.packages()
-update.packages()
+# For Linux (ignore otherwise)
+
+# sudo apt-get install curl
+# sudo apt-get install libssl-dev
+# sudo apt-get install libcurl4-openssl-dev
+# sudo apt-get install libxml2-dev
+
 
 # R packages
 install.packages("devtools")
@@ -15,16 +19,8 @@ install.packages("rmarkdown")
 install.packages("dplyr")
 install.packages("data.table")
 install.packages("ContourFunctions")
-
-
-# Updating R/RStudio/Tidyverse
-# Only on Windows
-install.packages("installr")
-library(installr)
-updateR()
-# From within RStudio, go to Help > Check for Updates
-# to install newer version of RStudio (if available, optional).
-
+install.packages("githubinstall")
+install.packages("MuMIn") # for calculating AICc
 
 # Learn R using SWIRL
 install.packages("swirl")
@@ -40,7 +36,7 @@ library("swirl")
 install_from_swirl("R Programming")
 # go to https://github.com/swirldev/swirl_courses#swirl-courses
 # Start swirl and complete the lessons
-swirl()
+# swirl()
 
 # installing swirl() courses
 install_course("R Programming")
@@ -58,6 +54,17 @@ Sys.which("make")
 # "C:\\PROGRA~1\\rtools40\\usr\\bin\\make.exe"
 install.packages("jsonlite", type = "source")
 
+# To update packages
+old.packages()
+update.packages()
+
+# Updating R/RStudio/Tidyverse
+# Only on Windows
+install.packages("installr")
+library(installr)
+updateR()
+# From within RStudio, go to Help > Check for Updates
+# to install newer version of RStudio (if available, optional).
 
 # to use rmarkdown to make pdf, you need to install latex package: tinytex
 install.packages('tinytex')

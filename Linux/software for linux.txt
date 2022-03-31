@@ -22,12 +22,6 @@ sudo snap install kdenlive
 
 
 =========================================================================
-			    	    Nomacs
-=========================================================================
-sudo apt install nomacs
-
-
-=========================================================================
 		    Pinta (Microsoft Paint Alternative)
 =========================================================================
 Install Pinta from Pinta maintainers PPA repository using terminal 
@@ -47,4 +41,97 @@ sudo apt-get update
 4. Install pinta:
 sudo apt-get install pinta
 
+
+=========================================================================
+		    		Ubuntu Cleaner 
+=========================================================================
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:gerardpuig/ppa
+sudo apt update
+sudo apt install ubuntu-cleaner
+
+
+=========================================================================
+		    		  Bleachbit 
+=========================================================================
+sudo apt install bleachbit -y
+
+
+=========================================================================
+		    		       R 
+=========================================================================
+# ----------------
+# Installing R 
+
+# Install the dependencies necessary to add a new repository over HTTPS:
+sudo apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common
+
+# Add the CRAN repository to your system sources’ list:
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+
+# Install R by typing:
+sudo apt install r-base
+
+# The installation may take a few minutes to complete. Once completed, verify it by printing the R version:
+R --version
+# ----------------
+
+
+# ----------------
+# Uninstalling R
+# Uninstall just r-base
+
+sudo apt-get remove r-base
+
+# This will remove just the r-base package itself.
+# ----------------
+
+# ----------------
+# Uninstall r-base and its dependencies
+
+sudo apt-get remove --auto-remove r-base
+
+# This will remove the r-base package and any other dependant packages which are no longer needed.
+# ----------------
+
+# ----------------
+# Purging your config/data too
+# If you also want to delete your local/config files for r-base then this will work.
+
+# Caution! Purged config/data can not be restored by reinstalling the package.
+
+sudo apt-get purge r-base
+
+# Or similarly, like this r-base
+sudo apt-get purge --auto-remove r-base
+# ----------------
+sudo apt-get remove r-base-core
+sudo apt-get autoremove
+
+=========================================================================
+		    		    RStudio 
+=========================================================================
+# Installing RStudio
+sudo apt-get install gdebi-core
+wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2022.02.1-461-amd64.deb
+sudo gdebi rstudio-server-2022.02.1-461-amd64.deb
+
+# uninstalling RStudio
+sudo apt-get remove rstudio
+
+=========================================================================
+		    		    MikTex 
+=========================================================================
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D6BC243565B2087BC3F897C9277A7293F59E4889
+
+echo "deb http://miktex.org/download/ubuntu focal universe" | sudo tee /etc/apt/sources.list.d/miktex.list
+
+sudo apt-get update
+sudo apt-get install miktex
+
+=========================================================================
+		    		   Texmaker 
+=========================================================================
+sudo apt install texmaker
 
