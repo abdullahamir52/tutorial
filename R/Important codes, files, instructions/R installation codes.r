@@ -20,7 +20,7 @@ install.packages("dplyr")
 install.packages("data.table")
 install.packages("ContourFunctions")
 install.packages("githubinstall")
-install.packages("MuMIn") # for calculating AICc
+
 
 # Learn R using SWIRL
 install.packages("swirl")
@@ -33,7 +33,7 @@ library("swirl")
 # install_course("Course Name Here")
 # but for our purposes, you want the one called R Programming.
 # Type the following from the R prompt to install this course:
-install_from_swirl("R Programming")
+# install_from_swirl("R Programming")
 # go to https://github.com/swirldev/swirl_courses#swirl-courses
 # Start swirl and complete the lessons
 # swirl()
@@ -46,6 +46,7 @@ install_course("Regression Models")
 install_course("Getting and Cleaning Data")
 install_course("Statistical Inference")
 install_course("Advanced R Programming")
+
 # Creating a path for Rtools
 writeLines('PATH="${RTOOLS40_HOME}\\usr\\bin;${PATH}"', con = "~/.Renviron")
 # then restart R (Ctrl + shift + F10)
