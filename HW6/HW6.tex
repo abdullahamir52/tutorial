@@ -1,0 +1,116 @@
+% !TEX TS-program = XeLaTeX
+\documentclass[12pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[latin9]{inputenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{natbib}
+\usepackage{epstopdf}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{subcaption}
+\usepackage{geometry}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage[authoryear]{natbib}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{amsfonts}
+\usepackage{fancyhdr}
+\usepackage[bottom]{footmisc}
+\usepackage{version}
+\usepackage{indentfirst}
+\usepackage{scalefnt}
+\usepackage{subcaption}
+\usepackage{rotating}
+%\setCJKmainfont[BoldFont=STHeiti,ItalicFont=STKaiti]{STSong}
+%\setCJKsansfont[BoldFont=STHeiti]{STXihei}
+%\setCJKmonofont{STFangsong}
+
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=Latex.dll}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=BibTeX}
+%TCIDATA{LastRevised=Monday, May 02, 2016 09:58:24}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{Language=American English}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{assumption}{Assumption}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\renewcommand{\baselinestretch}{1.1}
+\geometry{top=1.2in, bottom=1.1in, left=1.1in, right=1.1in}
+
+\begin{document}
+
+\begin{center}
+Homework 6
+\end{center}
+
+\medskip
+
+\noindent 1.  Get the dataset from \href{https://www.dropbox.com/s/2cyb1y87g3tk4ob/wage.xlsx?dl=0}{here} ($\leftarrow$this is a link). We have two variables: hourly wage (denoted as $y$) and ASVAB percentile (denoted as $x$). ASVAB is a standardized test. We use it as a proxy for ability. 
+
+\medskip
+
+(a) Use nonparametric regression to estimate the mean of $y$ conditional on $x$, i.e., $\hat E(y|x)$. For the bandwidth selection, use leave-one-out least squares cross-validation. Plot $\hat E(y|x)$ versus $x$ for $0\leq x\leq 100$.
+
+\medskip
+
+(b) Comment on the estimated relationship between hourly wage and ASVAB percentile.
+
+\medskip
+
+(c) (Optional) Redo part (a) and (b) with conditional mean being replaced by conditional median.
+
+\medskip
+
+\textbf{Submit your codes and results.}
+
+\medskip
+
+\noindent 2. Consider a measurement-error model
+$$y^*=\beta_0+\beta_1 x^*+\epsilon$$
+$$x=x^*+\eta$$
+with $\beta_0=1$ and $\beta_1=1$.
+$x^*$, $\eta$ and $\epsilon$ are independent of each other, and all follow standard normal distribution.
+Let the sample size be 1000.
+
+(a) If we run regression of $y^*$ on $x$, calculate the theoretical attenuation bias. Simulate the model 1000 times and calculate the mean of $\hat\beta_1$. Is the estimated bias close to the theoretical bias?
+
+\medskip
+
+(b) Consider a second measurement
+$$z=x^*+v$$
+with $v\sim N(0,1)$ being independent of $x^*$, $\eta$ and $\epsilon$. Use $z$ as IV for $x$ to estimate $\hat \beta_1$. Simulate the model 1000 times and calculate the mean of $\hat\beta_1$. Does the IV fix the bias?
+
+\medskip
+
+\textbf{Submit your codes and results.}
+
+\end{document}
