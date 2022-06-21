@@ -135,3 +135,25 @@ sudo apt-get install miktex
 =========================================================================
 sudo apt install texmaker
 
+
+=========================================================================
+		    	     Tor Browser Launcher
+=========================================================================
+
+# Add the Tor browser launcher PPA repository :
+sudo add-apt-repository ppa:micahflee/ppa
+
+# Install the Tor browser launcher package:
+sudo apt update
+sudo apt install torbrowser-launcher
+
+# Uninstalling Tor Browser
+sudo apt remove torbrowser-launcher
+
+# for further info got to 
+https://linuxize.com/post/how-to-install-tor-browser-on-ubuntu-20-04/
+
+=========================================================================
+		    		    
+=========================================================================
+
