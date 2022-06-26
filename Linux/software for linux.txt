@@ -2,6 +2,11 @@
  				Softwares for Linux
 =========================================================================
 
+git pull
+git add -A
+git commit -m "2022 06 26 mistress"
+git push origin main
+
 =========================================================================
  			    Installing google chrome
 =========================================================================
@@ -113,6 +118,12 @@ sudo apt install ubuntu-cleaner
 sudo apt install bleachbit -y
 
 
+
+
+
+wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo gpg --dearmor -o /usr/share/keyrings/r-project.gpg
+
+
 =========================================================================
 		    		       R 
 =========================================================================
@@ -195,6 +206,12 @@ sudo apt install texmaker
 =========================================================================
 		    	     Tor Browser Launcher
 =========================================================================
+sudo apt install flatpak
+sudo apt install gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+>> Restart
+flatpak install flathub com.github.micahflee.torbrowser-launcher
+flatpak run com.github.micahflee.torbrowser-launcher
 
 # Add the Tor browser launcher PPA repository :
 sudo add-apt-repository ppa:micahflee/ppa
