@@ -24,12 +24,13 @@ sudo apt install git
  			 Getting a personal access token
 =========================================================================
 >> go to github.com
->> upper right corner go to settings
+>> upper right corner go to settings 
 >> go to < > Developer settings
 >> go to Personal access tokens
 >> generate a personal access token
 >> save it for later
 >> when downloading a new repository, use the PAT when asked for password
+>> PAT : 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
 
 =========================================================================
  			 Setting your Git username
@@ -38,6 +39,20 @@ sudo apt install git
 >> Set a Git username:
 git config --global user.email "abdullahamir52@gmail.com"
 git config --global user.name "abdullahamir52"
+
+>> Confirm that you have set the Git username correctly:
+git config --global user.name
+>> abdullahamir52
+
+=========================================================================
+ 			 	Install GCM
+=========================================================================
+sudo apt install curl
+
+curl -LO https://raw.githubusercontent.com/GitCredentialManager/git-credential-manager/main/src/linux/Packaging.Linux/install-from-source.sh &&
+sh ./install-from-source.sh &&
+git-credential-manager-core configure
+
 
 
 =========================================================================
