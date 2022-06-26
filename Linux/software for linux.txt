@@ -55,6 +55,9 @@ git-credential-manager-core configure
 
 
 
+git config --global credential.credentialStore gpg
+git config --global credential.credentialStore plaintext
+
 =========================================================================
  			kdenlive (video editing software)
 =========================================================================
