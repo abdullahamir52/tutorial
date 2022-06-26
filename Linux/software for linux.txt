@@ -15,6 +15,30 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 =========================================================================
 sudo apt update && sudo apt upgrade -y
 
+=========================================================================
+ 			  	 Installing git
+=========================================================================
+sudo apt install git
+
+=========================================================================
+ 			 Getting a personal access token
+=========================================================================
+>> go to github.com
+>> upper right corner go to settings
+>> go to < > Developer settings
+>> go to Personal access tokens
+>> generate a personal access token
+>> save it for later
+>> when downloading a new repository, use the PAT when asked for password
+
+=========================================================================
+ 			 Setting your Git username
+=========================================================================
+>> Open Terminal.
+>> Set a Git username:
+git config --global user.email "abdullahamir52@gmail.com"
+git config --global user.name "abdullahamir52"
+
 
 =========================================================================
  			kdenlive (video editing software)
