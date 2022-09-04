@@ -11,9 +11,9 @@ install.packages("devtools")
 install.packages("ggvis")
 install.packages("ggplot2")
 install.packages("lme4")
-version
-sessioninfo
-browseVignettes()
+# version
+# sessioninfo
+# browseVignettes()
 install.packages("learnr")
 install.packages("rmarkdown")
 install.packages("dplyr")
@@ -68,8 +68,8 @@ updateR()
 # to install newer version of RStudio (if available, optional).
 
 # to use rmarkdown to make pdf, you need to install latex package: tinytex
+# do not install in linux
 install.packages('tinytex')
-tinytex::install_tinytex()
 # to uninstall TinyTeX, run tinytex::uninstall_tinytex()
 tinytex:::is_tinytex()
 # install at the very last. takes too long to install

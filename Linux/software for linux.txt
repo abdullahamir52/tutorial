@@ -8,6 +8,13 @@ git commit -m "2022 06 26 mistress"
 git push origin main
 
 =========================================================================
+ 				    Text Editor
+=========================================================================
+>> Open Ubuntu software
+>> search "Text Editor"
+>> Install 
+
+=========================================================================
  			    Installing google chrome
 =========================================================================
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -118,15 +125,22 @@ sudo apt install ubuntu-cleaner
 sudo apt install bleachbit -y
 
 
-
-
-
-wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo gpg --dearmor -o /usr/share/keyrings/r-project.gpg
-
-
 =========================================================================
 		    		       R 
 =========================================================================
+
+wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo gpg --dearmor -o /usr/share/keyrings/r-project.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/r-project.gpg] https://cloud.r-project.org/bin/linux/ubuntu jammy-cran40/" | sudo tee -a /etc/apt/sources.list.d/r-project.list
+
+sudo apt update
+
+sudo apt install --no-install-recommends r-base
+
+sudo -i R
+
+
+
 # ----------------
 # Installing R 
 
@@ -143,7 +157,6 @@ sudo apt install r-base
 # The installation may take a few minutes to complete. Once completed, verify it by printing the R version:
 R --version
 # ----------------
-
 
 # ----------------
 # Uninstalling R
@@ -179,10 +192,16 @@ sudo apt-get autoremove
 =========================================================================
 		    		    RStudio 
 =========================================================================
+sudo apt-get install r-base
+
+sudo dpkg -i rstudio-2022.02.3-492-amd64.deb
+
+sudo gdebi rstudio-2022.02.3-492-amd64.deb
+
 # Installing RStudio
 sudo apt-get install gdebi-core
-wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2022.02.1-461-amd64.deb
-sudo gdebi rstudio-server-2022.02.1-461-amd64.deb
+wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2022.02.3-492-amd64.deb
+sudo gdebi rstudio-server-2022.02.3-492-amd64.deb
 
 # uninstalling RStudio
 sudo apt-get remove rstudio
@@ -225,6 +244,31 @@ sudo apt remove torbrowser-launcher
 
 # for further info got to 
 https://linuxize.com/post/how-to-install-tor-browser-on-ubuntu-20-04/
+
+=========================================================================
+		    		    Xournal ++
+=========================================================================
+
+>> (Ubuntu 22.04 and newer only or Debian testing): 
+>> Install the latest stable release from the official repositories:
+sudo apt update
+sudo apt install xournalpp
+
+=========================================================================
+		    		    
+=========================================================================
+
+
+=========================================================================
+		    		    
+=========================================================================
+
+
+=========================================================================
+		    		    
+=========================================================================
+
+
 
 =========================================================================
 		    		    
