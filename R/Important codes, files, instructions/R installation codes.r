@@ -72,4 +72,4 @@ updateR()
 install.packages('tinytex')
 # to uninstall TinyTeX, run tinytex::uninstall_tinytex()
 tinytex:::is_tinytex()
-# install at the very last. takes too long to install
+# install at the very last. takes too long to install 
