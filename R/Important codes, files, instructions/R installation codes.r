@@ -20,7 +20,7 @@ install.packages("dplyr")
 install.packages("data.table")
 install.packages("ContourFunctions")
 install.packages("githubinstall")
-
+install.packages("ISLR") # for 564 Big data class
 
 # Learn R using SWIRL
 install.packages("swirl")
