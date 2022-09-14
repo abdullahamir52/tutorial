@@ -2,6 +2,74 @@
  				Softwares for Linux
 =========================================================================
 
+git pull
+git add -A
+git commit -m "2022 06 26 mistress"
+git push origin main
+
+=========================================================================
+ 				    Text Editor
+=========================================================================
+>> Open Ubuntu software
+>> search "Text Editor"
+>> Install 
+
+=========================================================================
+ 			    Installing google chrome
+=========================================================================
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+>> then go to the home and delete the downloaded file
+
+=========================================================================
+ 			  	 Updating ubuntu
+=========================================================================
+sudo apt update && sudo apt upgrade -y
+
+=========================================================================
+ 			  	 Installing git
+=========================================================================
+sudo apt install git
+
+=========================================================================
+ 			 Getting a personal access token
+=========================================================================
+>> go to github.com
+>> upper right corner go to settings 
+>> go to < > Developer settings
+>> go to Personal access tokens
+>> generate a personal access token
+>> save it for later
+>> when downloading a new repository, use the PAT when asked for password
+>> PAT : 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
+
+=========================================================================
+ 			 Setting your Git username
+=========================================================================
+>> Open Terminal.
+>> Set a Git username:
+git config --global user.email "abdullahamir52@gmail.com"
+git config --global user.name "abdullahamir52"
+
+>> Confirm that you have set the Git username correctly:
+git config --global user.name
+>> abdullahamir52
+
+=========================================================================
+ 			 	Install GCM
+=========================================================================
+sudo apt install curl
+
+curl -LO https://raw.githubusercontent.com/GitCredentialManager/git-credential-manager/main/src/linux/Packaging.Linux/install-from-source.sh &&
+sh ./install-from-source.sh &&
+git-credential-manager-core configure
+
+
+
+git config --global credential.credentialStore gpg
+git config --global credential.credentialStore plaintext
+
 =========================================================================
  			kdenlive (video editing software)
 =========================================================================
@@ -60,6 +128,19 @@ sudo apt install bleachbit -y
 =========================================================================
 		    		       R 
 =========================================================================
+
+wget -qO- https://cloud.r-project.org/bin/linux/ubuntu/marutter_pubkey.asc | sudo gpg --dearmor -o /usr/share/keyrings/r-project.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/r-project.gpg] https://cloud.r-project.org/bin/linux/ubuntu jammy-cran40/" | sudo tee -a /etc/apt/sources.list.d/r-project.list
+
+sudo apt update
+
+sudo apt install --no-install-recommends r-base
+
+sudo -i R
+
+
+
 # ----------------
 # Installing R 
 
@@ -76,7 +157,6 @@ sudo apt install r-base
 # The installation may take a few minutes to complete. Once completed, verify it by printing the R version:
 R --version
 # ----------------
-
 
 # ----------------
 # Uninstalling R
@@ -112,10 +192,16 @@ sudo apt-get autoremove
 =========================================================================
 		    		    RStudio 
 =========================================================================
+sudo apt-get install r-base
+
+sudo dpkg -i rstudio-2022.02.3-492-amd64.deb
+
+sudo gdebi rstudio-2022.02.3-492-amd64.deb
+
 # Installing RStudio
 sudo apt-get install gdebi-core
-wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2022.02.1-461-amd64.deb
-sudo gdebi rstudio-server-2022.02.1-461-amd64.deb
+wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-2022.02.3-492-amd64.deb
+sudo gdebi rstudio-server-2022.02.3-492-amd64.deb
 
 # uninstalling RStudio
 sudo apt-get remove rstudio
@@ -139,6 +225,12 @@ sudo apt install texmaker
 =========================================================================
 		    	     Tor Browser Launcher
 =========================================================================
+sudo apt install flatpak
+sudo apt install gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+>> Restart
+flatpak install flathub com.github.micahflee.torbrowser-launcher
+flatpak run com.github.micahflee.torbrowser-launcher
 
 # Add the Tor browser launcher PPA repository :
 sudo add-apt-repository ppa:micahflee/ppa
@@ -152,6 +244,31 @@ sudo apt remove torbrowser-launcher
 
 # for further info got to 
 https://linuxize.com/post/how-to-install-tor-browser-on-ubuntu-20-04/
+
+=========================================================================
+		    		    Xournal ++
+=========================================================================
+
+>> (Ubuntu 22.04 and newer only or Debian testing): 
+>> Install the latest stable release from the official repositories:
+sudo apt update
+sudo apt install xournalpp
+
+=========================================================================
+		    		    
+=========================================================================
+
+
+=========================================================================
+		    		    
+=========================================================================
+
+
+=========================================================================
+		    		    
+=========================================================================
+
+
 
 =========================================================================
 		    		    
