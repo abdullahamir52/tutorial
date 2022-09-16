@@ -51,3 +51,9 @@ file.remove('mytest.R')
 
 # Make a copy of "mytest2.R" called "mytest3.R" using file.copy().
 file.copy("mytest2.R", "mytest3.R")
+
+# to see the margins of the plot window
+par("mar")
+
+# to change the margins of the plot window
+par(mar=c(1,1,1,1))

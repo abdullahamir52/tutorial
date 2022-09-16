@@ -20,7 +20,7 @@ install.packages("dplyr")
 install.packages("data.table")
 install.packages("ContourFunctions")
 install.packages("githubinstall")
-
+install.packages("ISLR") # for 564 Big data class
 
 # Learn R using SWIRL
 install.packages("swirl")
@@ -72,4 +72,4 @@ updateR()
 install.packages('tinytex')
 # to uninstall TinyTeX, run tinytex::uninstall_tinytex()
 tinytex:::is_tinytex()
-# install at the very last. takes too long to install
+# install at the very last. takes too long to install 
