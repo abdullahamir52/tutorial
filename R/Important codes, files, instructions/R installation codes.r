@@ -68,7 +68,7 @@ updateR()
 # to install newer version of RStudio (if available, optional).
 
 # to use rmarkdown to make pdf, you need to install latex package: tinytex
-# do not install in linux
+# do not install in linux (with texmaker)
 install.packages('tinytex')
 # to uninstall TinyTeX, run tinytex::uninstall_tinytex()
 tinytex:::is_tinytex()
