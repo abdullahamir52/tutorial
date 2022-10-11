@@ -1,8 +1,63 @@
-**********************************************************************
-**** Stata (Logit, Probit, Ordered Probit with Mean and Variance) ****
-**********************************************************************
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{graphicx, lmodern, float, hyperref}
+\usepackage{multirow, multicol, dcolumn, tabularx, array}
+\usepackage[table]{xcolor}
+\usepackage{tikz,pgfplots}
+\usepackage[none]{hyphenat}
+\usepackage{fancyhdr} % lets you customize header and footer
+\usepackage[nottoc, notlot, notlof]{tocbibind} % to use table of contents
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 
-\begin{table}[H]
+\usepackage{lipsum} % for dummy text
+\usepackage{enumitem}
+
+
+\author{Chowdhury Amir Abdullah}
+\title{Regression Tables}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
+\pagestyle{empty}
+
+\pagestyle{fancy} 
+\fancyhead{} % to clear the default header and footer
+\fancyfoot{}
+
+
+% Changing header
+\fancyhead[L] { \slshape \MakeUppercase{Regression Tables}}
+\fancyhead[R] { \slshape Chowdhury Amir Abdullah}
+
+\fancyfoot[C] {\thepage}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{document}
+
+
+
+
+
+
+**********************************************************************\\
+**** Stata (Logit, Probit, Ordered Probit with Mean and Variance) ****\\
+**********************************************************************\\
+
+\begin{table}[h!]
 \def\arraystretch {1.5}
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|}
@@ -30,9 +85,9 @@
 
 
 
-************************
-**** Stata (Probit) ****
-************************
+************************\\
+**** Stata (Probit) ****\\
+************************\\
 
 
 \begin{table}[H]
@@ -54,9 +109,9 @@ w & Coef. & Std. Error & Z & P $> |z| $ \\
 \end{table}
 
 
-**************************
-**** Investment paper ****
-**************************
+**************************\\
+**** Investment paper ****\\
+**************************\\
 
 \begin{table}[H]
 \def\arraystretch {1.5}
@@ -83,7 +138,6 @@ w & Coef. & Std. Error & Z & P $> |z| $ \\
 
 
 The Table \ref{multirow_table} displays a table with a cell spanning multiple rows
-
 		\begin{table} [ht]
 			\centering
 			\scalebox{1.5}
@@ -146,4 +200,20 @@ Mode &  Var  &  Cum\\
 \end{tabular}
 \end{table}
 
-This typology (see table \ref{tab: data 1} ) explains that “institutional quality is correlated with income levels” but they are not sufficient to predict the economic growth. The early growth that Bangladesh has experienced since the financial deregulation of 1990s has to be backed up by steady changes in business environment, enhancing domestic and foreign investment. Otherwise, Bangladesh might face a move towards service sector before becoming properly industrialized, like the Dualistic-development theories, a persistent divergence between rich and poor nations; poverty and affluence, modern and traditional sectors, growth and stagnation coexisting in the economy. This is something that India is experiencing as it is riding on the growth of the IT sector and outsourcing services with convergence dynamics but lagging behind in rising employment in highly skill-intensive IT sector as the majority of the labor is skill-intensive in there. And as the rise of technological progress goes on, Bangladesh faces premature deindustrialization as the manufacturing sector becomes more capital and skill intensive and globalization makes the move into service sectors earlier than expected with severe consequence such as lower growth and democratic failure (Rodrik , Premature Deindustrialization, 2015).
+
+
+\begin{table}[h!]
+\centering
+ \begin{tabular}{||c|c|c|c||} 
+ \hline
+ $\hat{\beta}$ & SE & Uncentered $R^2$ & Centered $R^2$ \\ [0.5ex] 
+ \hline
+ 7.0676  & 0.67414 & \multirow{4}{4em}{0.76924} & \multirow{4}{4em}{0.23754} \\
+ -2.5135  & 0.21556 & &\\
+ 0.19732  & 0.36451 & &\\
+ -1.7761 & 0.3616 & &\\ [1ex] 
+ \hline
+ \end{tabular}
+\end{table}
+
+\end{document}

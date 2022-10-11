@@ -31,14 +31,14 @@ args(subset)
 # To see the working directory
 getwd()
 
+# To change the directory
+setwd("E:/GitHub Repositories/datasciencecoursera/Course 2 (R Programming)")
+
 # To see the files in the directory
 dir()
 
 # To create a directory within the current working directory
 dir.create("directory_name")
-
-# To change the directory
-setwd("E:/GitHub Repositories/datasciencecoursera/Course 2 (R Programming)")
 
 # To create a file within the directory
 file.create("mytest.R")

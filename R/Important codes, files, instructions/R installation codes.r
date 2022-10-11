@@ -21,6 +21,7 @@ install.packages("data.table")
 install.packages("ContourFunctions")
 install.packages("githubinstall")
 install.packages("ISLR") # for 564 Big data class
+install.packages("haven") # to read stata dta file
 
 # Learn R using SWIRL
 install.packages("swirl")
