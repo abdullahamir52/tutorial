@@ -9,6 +9,7 @@
 # R packages
 install.packages("devtools")
 install.packages("ggvis")
+install.packages("ggplot")
 install.packages("ggplot2")
 install.packages("lme4")
 # version
@@ -22,6 +23,10 @@ install.packages("ContourFunctions")
 install.packages("githubinstall")
 install.packages("ISLR") # for 564 Big data class
 install.packages("haven") # to read stata dta file
+install.packages("caTools") # to split sample into two groups. Check ECG564 HW4
+install.packages("gbm") # Gradient Boosting Machines ECG564 HW4
+install.packages("glmnet") # fits generalized linear & similar models ECG564 HW4
+install.packages("randomForrest") # avoids overfitting ECG564 HW4
 
 # Learn R using SWIRL
 install.packages("swirl")

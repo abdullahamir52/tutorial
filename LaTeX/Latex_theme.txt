@@ -1,0 +1,41 @@
+Background
+#001a46
+
+Current line
+#6f6f6f
+#898989
+
+Highlighted line
+#ff0000
+
+Text
+#ffffff
+
+Comment
+#cc6699
+
+Math
+#61ce3c
+
+LaTeX command
+#f88f33
+
+Structure
+#39c3a0
+
+Verbatim/Graphics
+#e6a252
+
+Todo
+#ff6400
+
+Graphic keywords
+#f47bda
+
+Graphic Numbers
+#660066
+
+
+
+
+
