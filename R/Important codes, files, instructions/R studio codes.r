@@ -33,6 +33,7 @@ getwd()
 
 # To change the directory
 setwd("E:/GitHub Repositories/datasciencecoursera/Course 2 (R Programming)")
+setwd("/home/abdullahamir52/github/NCSU/2nd year/3rd semester/564 Big Data Econometrics/HW/HW5" )
 
 # To see the files in the directory
 dir()

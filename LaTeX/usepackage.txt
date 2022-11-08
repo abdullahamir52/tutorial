@@ -45,6 +45,12 @@
 \usepackage{rotating}
 \usepackage{subfig}
 
+\usepackage{pdfpages} % to include pdfs in the latex
+
+\usepackage[toc]{appendix} % to include appendix
+% Find the value here. \ref{appendix:c9e7_plots}
+% \section{section_name}\label{appendix:link}
+
 
 \parindent 0px
 \pagestyle{empty}
