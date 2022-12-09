@@ -27,7 +27,11 @@ install.packages("caTools") # to split sample into two groups. Check ECG564 HW4
 install.packages("gbm") # Gradient Boosting Machines ECG564 HW4
 install.packages("glmnet") # fits generalized linear & similar models ECG564 HW4
 install.packages("randomForrest") # avoids overfitting ECG564 HW4
+install.packages('sjmisc') # label values of categorical Variable ECG564 project
+install.packages('labelled') # label values of categorical Variable ECG564 project
+install.packages("foreign") # to load stata dta file
 
+ 
 # Learn R using SWIRL
 install.packages("swirl")
 # If you've installed swirl in the past make sure having version 2.2.21 or later.
