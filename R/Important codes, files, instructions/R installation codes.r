@@ -30,7 +30,7 @@ install.packages("randomForrest") # avoids overfitting ECG564 HW4
 install.packages('sjmisc') # label values of categorical Variable ECG564 project
 install.packages('labelled') # label values of categorical Variable ECG564 project
 install.packages("foreign") # to load stata dta file
-
+install.packages("car") # to calculate VIF. This package doesn't work in linux
  
 # Learn R using SWIRL
 install.packages("swirl")
