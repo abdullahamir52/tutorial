@@ -2,25 +2,6 @@
  				Softwares for Linux
 =========================================================================
 
-git pull
-git add -A
-git commit -m "2022 06 26 mistress"
-git push origin main
-
-=========================================================================
- 				    Text Editor
-=========================================================================
->> Open Ubuntu software
->> search "Text Editor"
->> Install 
-
-=========================================================================
- 			    Installing google chrome
-=========================================================================
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
-
->> then go to the home and delete the downloaded file
 
 =========================================================================
  			  	 Updating ubuntu
@@ -69,11 +50,6 @@ git-credential-manager-core configure
 
 git config --global credential.credentialStore gpg
 git config --global credential.credentialStore plaintext
-
-=========================================================================
- 			kdenlive (video editing software)
-=========================================================================
-sudo snap install kdenlive
 
 =========================================================================
 			    	 Avro Keyboard
@@ -262,25 +238,6 @@ snap-store --quit
 sudo snap refresh
 
 =========================================================================
-		    	     Powershell (Microsoft)
-=========================================================================
-
-# Update the list of packages
-sudo apt-get update
-# Install pre-requisite packages.
-sudo apt-get install -y wget apt-transport-https software-properties-common
-# Download the Microsoft repository GPG keys
-wget -q "https://packages.microsoft.com/config/ubuntu/$(lsb_release -rs)/packages-microsoft-prod.deb"
-# Register the Microsoft repository GPG keys
-sudo dpkg -i packages-microsoft-prod.deb
-# Update the list of packages after we added packages.microsoft.com
-sudo apt-get update
-# Install PowerShell
-sudo apt-get install -y powershell
-# Start PowerShell
-pwsh
-
-=========================================================================
 		    	   SimpleScreenRecorder
 =========================================================================
 
@@ -289,10 +246,32 @@ sudo apt-get update
 sudo apt-get install simplescreenrecorder
 
 =========================================================================
-		    		    
+		    		 Anaconda
 =========================================================================
 
+--------------------------
+Installing anaconda
+--------------------------
+bash ~/Downloads/replace_the_downloaded_file.sh
 
+# close the terminal and open it again. Then run the following commands one after the other. Check the results. 
+
+conda list
+python
+quit()
+anaconda-navigator
+
+--------------------------
+Updating anaconda
+--------------------------
+
+conda update -n base conda
+conda update --all
+
+or 
+
+conda update conda 
+conda update --all
 
 =========================================================================
 		    		    
