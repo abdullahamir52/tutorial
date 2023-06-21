@@ -25,6 +25,8 @@ sudo apt install git
 >> when downloading a new repository, use the PAT when asked for password
 >> PAT : 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
 
+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
+
 =========================================================================
  			 Setting your Git username
 =========================================================================
