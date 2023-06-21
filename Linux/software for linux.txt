@@ -23,7 +23,7 @@ sudo apt install git
 >> generate a personal access token
 >> save it for later
 >> when downloading a new repository, use the PAT when asked for password
->> PAT : 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
+>> PAT : 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
 
 =========================================================================
  			 Setting your Git username
@@ -45,6 +45,7 @@ sudo apt install curl
 curl -LO https://raw.githubusercontent.com/GitCredentialManager/git-credential-manager/main/src/linux/Packaging.Linux/install-from-source.sh &&
 sh ./install-from-source.sh &&
 git-credential-manager-core configure
+
 
 
 
