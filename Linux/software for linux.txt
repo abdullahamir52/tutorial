@@ -23,7 +23,7 @@ sudo apt install git
 >> generate a personal access token
 >> save it for later
 >> when downloading a new repository, use the PAT when asked for password
->> PAT : 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
+>> PAT : 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
 
 =========================================================================
  			 Setting your Git username
