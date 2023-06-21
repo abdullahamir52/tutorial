@@ -29,7 +29,7 @@ sudo apt install git
  			 Setting your Git username
 =========================================================================
 >> Open Terminal.
->> Set a Git username:
+>> Set a Git username: 
 git config --global user.email "abdullahamir52@gmail.com"
 git config --global user.name "abdullahamir52"
 
