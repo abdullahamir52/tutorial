@@ -47,7 +47,7 @@ sh ./install-from-source.sh &&
 git-credential-manager-core configure
 
 
-
+ 
 
 git config --global credential.credentialStore gpg
 git config --global credential.credentialStore plaintext
