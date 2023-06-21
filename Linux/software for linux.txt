@@ -41,7 +41,7 @@ git config --global user.name
 
 =========================================================================
  			 	Install GCM
-=========================================================================
+=========================================================================  
 sudo apt install curl 
 
 curl -LO https://raw.githubusercontent.com/GitCredentialManager/git-credential-manager/main/src/linux/Packaging.Linux/install-from-source.sh &&
